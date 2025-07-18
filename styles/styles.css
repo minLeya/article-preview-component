@@ -1,0 +1,32 @@
+* {
+    font-size: 13 px;
+    background-color: hsl(212, 23%, 69%);
+}
+
+@media (min-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 335px;
+
+        /* don't work */
+        justify-content: center;
+        background-color: hsl(210, 46%, 95%);
+    }
+
+    .image-drawers {
+        width: 335px;
+    }
+
+    .author-image-michelle {
+        width: 50px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+}
