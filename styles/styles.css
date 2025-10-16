@@ -97,6 +97,7 @@ body {
         width: 30px;
         height: 30px;
         border: none;
+        cursor: pointer;
     }
 
     .share-icon {
@@ -110,6 +111,12 @@ body {
 
     .active-state {
         display: none;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(210, 46%, 95%);
+    }
+
+    .active-state.active {
+        display: flex;
     }
 }
 
