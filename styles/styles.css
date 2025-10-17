@@ -1,130 +1,166 @@
-
 body {
-    font-size: 13px;
-    font-family: 'Manrope';
-    background-color: hsla(210, 40%, 84%, 0.673);
-    height: 100vh;
-    box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Manrope";
+  background-color: hsla(210, 40%, 84%, 0.673);
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .attribution {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 375px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 335px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
 
-        /* don't work - need to s*/
-        justify-content: center;
+    /* don't work - need to s*/
+    justify-content: center;
 
-        border-radius: 8px;
-        background-color: hsl(210, 46%, 95%);
+    border-radius: 8px;
+    background-color: hsl(210, 46%, 95%);
+  }
 
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .image-drawers {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
 
-    .image-drawers {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px 8px 0 0;
-    }
+  .card-text {
+    padding: 25px;
+  }
 
-    .card-text {
-        padding: 25px;
-    }
+  .article-name {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 9px;
+  }
 
-    .article-name {
-        font-weight: 700;
-        color: hsl(217, 19%, 35%);
-        font-size: 9px;
-    }
+  .article-description {
+    color: hsl(214, 17%, 51%);
+  }
 
-    .article-description {
-        color: hsl(214, 17%, 51%);
-    }
+  .author-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* thanks to that share icon in center */
+    margin-top: 20px;
+    font-size: 12px;
+  }
 
-    .author-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; /* thanks to that share icon in center */
-        margin-top: 20px;
-        font-size: 12px;
-    }
+  .author-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .author-details {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  .name-date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    /* gap: 3px; */
+  }
 
-    .name-date {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        justify-content: center;
-        /* gap: 3px; */
-    }
+  .name-date .author-name {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+  }
 
-    .name-date .author-name {
-        font-weight: 700;
-        color: hsl(217, 19%, 35%);
-    }
+  .name-date .date {
+    color: hsl(214, 17%, 51%);
+  }
 
-    .name-date .date {
-        color: hsl(214, 17%, 51%);
-    }
+  .share-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(212, 48%, 89%, 0.673);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
 
-    .share-icon-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: hsla(212, 48%, 89%, 0.673);
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        border: none;
-        cursor: pointer;
-    }
+  .share-icon {
+    height: 12px;
+  }
 
-    .share-icon {
-        height: 12px;
-    }
+  .author-image-michelle {
+    width: 45px;
+    border-radius: 50%;
+  }
 
-    .author-image-michelle {
-        width: 45px;
-        border-radius: 50%;
-    }
+  .active-state {
+    display: none;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+  }
 
-    .active-state {
-        display: none;
-        background-color: hsl(217, 19%, 35%);
-        color: hsl(210, 46%, 95%);
-    }
+  .active-state.active {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    border-radius: 0 0 8px 8px;
+    padding: 15px 25px 15px 25px;
 
-    .active-state.active {
-        display: flex;
-    }
+  }
+
+  .active-state a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+
+  .network-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .share-icon-container.active {
+    background-color: hsl(214, 17%, 51%);
+  }
+
+.share-icon-container.active .share-icon-2 {
+  filter: brightness(0) invert(1);
+}
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 @media (min-width: 1440px) {
-
-    .card {
-        display: flex;
-        flex-direction: column;
-    }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
