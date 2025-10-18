@@ -1,0 +1,86 @@
+@media (min-width: 1440px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    height: 290px;
+    width: 720px;
+    box-shadow: 5%;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .image-drawers {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    object-position: left center;
+  }
+
+  .article-description {
+    margin-top: 20px;
+  }
+  .card-text {
+    padding: 40px;
+    margin: 0px;
+  }
+
+  .author-info {
+    margin-top: 20px;
+  }
+
+  /* for active state */
+  .left {
+    gap: 20px;
+  }
+
+  .active-state {
+    display: none;
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    bottom: 98px;
+    right: -64px;
+  }
+
+  .active-state.active {
+    border-radius: 10px;
+    padding: 18px 35px 18px 35px;
+  }
+
+  .active-state::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 110px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+  }
+
+  .active-state a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+  }
+
+  .network-icons img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .network-icons {
+    gap: 15px;
+  }
+}
