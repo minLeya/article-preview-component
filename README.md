@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/article-preview-using-javascript-VZF7pFC1y7)
 - Live Site URL: [article preview component](https://minleya.github.io/article-preview-component/)
 
 ## My process
