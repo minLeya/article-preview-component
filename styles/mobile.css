@@ -66,7 +66,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; /* thanks to that share icon in center */
+    align-items: center;
     margin-top: 20px;
     font-size: 12px;
   }
@@ -82,7 +82,6 @@ h1 {
     flex-direction: column;
     margin-left: 20px;
     justify-content: center;
-    /* gap: 3px; */
   }
 
   .name-date .author-name {
